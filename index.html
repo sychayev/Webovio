@@ -4,28 +4,108 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Document</title>
 		<link rel="stylesheet" href="css/style.min.css">
+
+		<title>Webovio agency</title>
 	</head>
 	<body>
 		<div class="wrapper">
 			<header class="header">
-				<div class="container">
-					<p>Header</p>
-				</div>
-			</header>
-			<main class="main">
-					<div class="container">
-								<p>MAIN</p>
+				<div class="header__container _container">
+						<a href="#" class="header__menu-logo"><img src="images/logo-header.svg"
+								alt="Logo header"></a>
+								<button class="header__burger-btn" id="burger">
+									<span></span>
+									<span></span>
+									<span></span>
+								</button>
+				<nav class="header__menu" id="menu">
+					<ul class="header__menu-items">
+							<li class="header__menu-item"><a href="#" class="header__link">Link</a>
+								<ul class="header__sub-list">
+									<li><a href="#" class="header__sub-link">Link</a></li>
+									<li><a href="#" class="header__sub-link">Link</a>
+										<ul class="header__sub-list">
+											<li><a href="#" class="header__sub-link">Link</a></li>
+											<li><a href="#" class="header__sub-link">Link</a></li>
+											<li><a href="#" class="header__sub-link">Link</a></li>
+										</ul>
+									</li>
+									<li><a href="#" class="header__sub-link">Link</a></li>
+								</ul>
+							</li>
+							<li class="header__menu-item"><a href="#"
+									class="header__link">Link</a></li>
+							<li class="header__menu-item"><a href="#"
+									class="header__link">Link</a></li>
+							<li class="header__menu-item"><a href="#" class="header__link">Link</a>
+								<ul class="header__sub-list">
+									<li><a href="#" class="header__sub-link">Link</a></li>
+									<li><a href="#" class="header__sub-link">Link</a></li>
+									<li><a href="#" class="header__sub-link">Link</a></li>
+								</ul></li></li>
+						<li class="header__menu-item"><a href="#"
+								class="header__link">Link</a></li>
+					</ul>
+				</nav>
+			</div>
+
+		</header>
+		<main class="page">
+			<div class="page__main-block main-block">
+				<div class="main-block__container _container">
+					<div class="main-block__body">
+						<div class="main-block__up-title">A place where </div>
+						<div class="main-block__column-title"> A creative agency for redemptive
+							brands</div>
+						<div class="main-block__column-text">
+								Anteelo is a leading strategic design firm that builds powerful digital
+								solutions for startups and enterprises.z
+						</div>
+						<a href="#" class="main-block__column-link">&#128073 Get in touch</a>
 					</div>
 				</div>
-			</main>
-			<div class="footer">
-				<div class="container">
-					<p>Footer</p>
+				<div class="main-block__bg-image _ibg">
+					<img src="images/BG-general.png" alt="BG main-block">
 				</div>
 			</div>
+			<div class="row-ads">
+				<div class="row-ads__container _container">
+					<div class="row-ads__body">
+					<div class="row-ads__image">
+						<a href="#"><img src="images/Andrew-Porter-row.jpg" alt="Andrew-Porter image"></a>
+					</div>
+					<div class="row-ads__image">
+						<a href="#"><img src="images/Row-Jalen-Rose-Leadership-Academy.jpg" alt="Jalen-Rose image"></a>
+					</div>
+					<div class="row-ads__image">
+						<a href="#"><img src="images/Row-Wal.jpg" alt="Wallbridge image"></a>
+					</div>
+					<div class="row-ads__image">
+						<a href="#"><img src="images/Row-Ideal.jpg" 
+						alt="Ideal contracting image"></a>
+					</div>
+					<div class="row-ads__image">
+						<a href="#"><img src="images/Row-PhalenLeadership.jpg" alt="Phalen leadership academy image"></a>
+					</div>
+					</div>
+				</div>
+			</div>
+		</main>
+			<footer class="footer">
+				<div class="footer__container _container">
+					Footer
+				</div>
+			</footer>
 		</div>
-		<script src="js/main.min.js"></script>
+		<script
+			src="js/main.min.js">
+	</script>
+		<script>
+		document.querySelector('.header__burger').addEventListener('click', function(){
+				this.classList.toggle('active');
+				document.querySelector('.header__menu').classList.toggle('open');
+			})
+			</script>
 	</body>
 </html>
